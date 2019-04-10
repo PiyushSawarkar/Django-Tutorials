@@ -1,0 +1,9 @@
+<h1>Counted</h1>
+<a href= {% url 'home' %}>back</a>
+<br/>
+The Total number of word in your string are = {{ word_count }}
+
+{% for word,occ in occurences %}
+<br/>
+{{ word }} = {{ occ }}
+{% endfor %} 
